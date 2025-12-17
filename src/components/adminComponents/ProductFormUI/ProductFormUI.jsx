@@ -8,7 +8,7 @@ export const ProductFormUI = ({
 }) => { //todas estas props van a venir del padre
   return (
     <section>
-      <form className="product-form" onSubmit={onSubmit}>
+      <form className="product-form  aos-init aos-animate" onSubmit={onSubmit} data-aos="zoom-in">
         <h2>Agregar producto</h2>
         <div>
           <label>Nombre:</label>

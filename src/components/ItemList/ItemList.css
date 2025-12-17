@@ -1,0 +1,4 @@
+.productos-panaderia-grid{
+    display: grid;
+    justify-items: center;
+}

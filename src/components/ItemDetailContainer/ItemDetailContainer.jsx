@@ -24,6 +24,7 @@ export const ItemDetailContainer = () => {
 
  return (
     <main className="detail-container">
+      <h2 className="detail-container-titulo-h2" >Detalle</h2>
       {Object.keys(detail).length ? (
         <ItemDetail detail={detail} />
       ) : (

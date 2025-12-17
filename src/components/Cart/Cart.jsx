@@ -8,15 +8,19 @@ export const Cart = () => {
 
   return (
     <section className="item-list-container">
-      <h2>Carrito de compras</h2>
+      <h2 className="item-titulo-carrito-h2" >Carrito de compras</h2>
 
       {cart.length ? (
         cart.map((prod) => (
           
             <Item key={prod.id} {...prod}>
-              <span>Cantidad: {prod.quantity}</span>
+              <span className="cantidad-panaderia-cart">Cantidad: {prod.quantity}</span>
               <button className="btn-panaderia btn-panaderia-cart-elimimar" onClick={() => deleteItem(prod.id)}>
                 Eliminar
+              </button>
+              <span className="cant-panaderia-cart-celular">Cant.: {prod.quantity}</span>
+              <button className=" btn-panaderia-cart-elimimar-celular" onClick={() => deleteItem(prod.id)}>
+                X
               </button>
             </Item>
           

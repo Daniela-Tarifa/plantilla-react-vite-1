@@ -4,9 +4,11 @@
   margin: 2rem auto;
   padding: 1.25rem 1.5rem;
   background: #2c2c2c; /* gris oscuro */
-  color: #f0f0f0; /* texto claro */
+  /*color: #f0f0f0;  texto claro */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 /* Título */
@@ -39,7 +41,7 @@
   border: 1px solid #444;
   border-radius: 8px;
   background: #3a3a3a;
-  color: #f0f0f0;
+  color: #ffcc66;
   outline: none;
   transition: border-color 0.15s ease, background 0.15s ease;
 }
@@ -56,8 +58,15 @@
 .product-form textarea:focus {
   border-color: #fac65e;
   background: #353535;
+  color: #ffcc66;
 }
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="file"]{
 
+  background: #353535;
+  color: #ffcc66;
+}
 /* Textarea */
 .product-form textarea {
   min-height: 120px;

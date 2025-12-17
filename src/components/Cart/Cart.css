@@ -1,7 +1,17 @@
-.item-list-container h2 {
+.item-titulo-carrito-h2{
+  margin: 2rem 0rem;
+  padding: 0px;
+  text-align: center;
+}
+.item-list-container .product-title {
   width: 100%;
   text-align: center;
   margin: 2rem 0rem;
+  margin: 0px;
+
+  text-align: left;
+  /*width: 80%;*/
+  padding-left: 15px;
 }
 
 .btn-container {
@@ -20,12 +30,22 @@
 .item-list-container > .product-item{
   display: flex;
   flex-direction: row;
-  max-width: 100%; /* 250px */
+  /*max-width: 100%;  250px */
   margin: 0px;
+  max-width:70%;
+  width: -webkit-fill-available;
+  align-items: center;
+
+      /*justify-content: space-between;*/
 }
+/*
 .item-list-container >.product-item img{
   width: 20%;
   height: auto;
+}*/
+.item-list-container .product-item-imagen{
+    width: 20%;
+    height: auto;
 }
 .item-list-container >.product-item p{
   display: none;
@@ -33,9 +53,80 @@
 .item-list-container > .product-item span{
   padding: 19px;
 }
+.item-list-container{
+  justify-items: center;
+}
 .btn-panaderia-cart-elimimar{
-  display: flex;
+  display: block;
   padding: 15px;
   height: 55px;
   margin: 1rem 0rem; /*18px 0px*/
+}
+.btn-panaderia-cart-elimimar-celular{
+  display: none;
+}
+.cant-panaderia-cart-celular{
+  display: none;
+}
+.item-list-container >  .product-item > .product-item-panaderia-textos{
+  display: flex ;
+  flex-direction: row;
+  /*display: content;*/
+   /* justify-content: space-around;
+    justify-content: space-between;*/
+    align-items: center;
+    width: 80%;
+}
+
+.item-list-container > .product-item > .product-item-panaderia-textos > .product-item-panaderia-texto-principal{
+  /*display: contents;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+    /*justify-content: space-between;*/
+    width: 100%;
+            display: contents;
+                                                   
+}
+
+/*para celular*/
+@media(max-width: 720px){
+  .item-list-container > .product-item{
+    display: flex;
+    flex-direction: row; 
+    max-width: 100%;
+    justify-content: space-around;
+}
+  .item-list-container >.product-item-panaderia-textos{
+    display: flex;
+    align-items: center;    
+  }
+  .btn-panaderia-cart-elimimar{
+    display: none;
+  }
+  .cantidad-panaderia-cart{
+    display: none;
+  }
+  .btn-panaderia-cart-elimimar-celular{
+    display: block;
+    padding: 0.6em;
+  }
+  .cant-panaderia-cart-celular{
+    display: block;
+  }
+  .item-list-container > .product-item
+  {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item-list-container .product-title {
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
 }
