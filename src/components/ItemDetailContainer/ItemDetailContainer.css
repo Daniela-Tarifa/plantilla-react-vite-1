@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-
   flex-direction: column;
 }
+
 /*para pc*/
 @media(min-width: 960px){
   .detail-container-titulo-h2{
     text-align: left;
-        width: -webkit-fill-available;
-        margin: 12px 12px 0px 12px;
+    width: -webkit-fill-available;
+    margin: 12px 12px 0px 12px;
   }
   .detail-container{
     padding: 0px 2rem ;

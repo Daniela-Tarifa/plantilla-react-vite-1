@@ -2,7 +2,7 @@
   font-family: "Rubik Doodle Shadow", system-ui;
   font-weight: 400;
   font-style: normal;
-  color: #ffcc66; /**aqua**/
+  color: #ffcc66;
   margin-top: 0px;
 }
 header{
@@ -14,16 +14,15 @@ header{
   header{
   display: flex;
   justify-content: space-between;
-
   padding: 2rem;
-}
-.header-logo{
-  display: flex;
-  align-items: center;
-}
-.header-logo > img{
-  width: auto;
-  height: 60px;
-  padding-right: 15px;
-}
+  }
+  .header-logo{
+    display: flex;
+    align-items: center;
+  }
+  .header-logo > img{
+    width: auto;
+    height: 60px;
+    padding-right: 15px;
+  }
 }

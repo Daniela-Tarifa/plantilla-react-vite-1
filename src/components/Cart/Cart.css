@@ -8,12 +8,9 @@
   text-align: center;
   margin: 2rem 0rem;
   margin: 0px;
-
   text-align: left;
-  /*width: 80%;*/
   padding-left: 15px;
 }
-
 .btn-container {
   width: 100%;
   margin-top: 2rem;
@@ -22,7 +19,6 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .total-pagar {
   width: 100%;
   text-align: center;
@@ -31,19 +27,11 @@
 .item-list-container > .product-item{
   display: flex;
   flex-direction: row;
-  /*max-width: 100%;  250px */
   margin: 0px;
   max-width:70%;
   width: -webkit-fill-available;
   align-items: center;
-
-      /*justify-content: space-between;*/
 }
-/*
-.item-list-container >.product-item img{
-  width: 20%;
-  height: auto;
-}*/
 .item-list-container .product-item-imagen{
     width: 20%;
     height: auto;
@@ -72,21 +60,12 @@
 .item-list-container >  .product-item > .product-item-panaderia-textos{
   display: flex ;
   flex-direction: row;
-  /*display: content;*/
-   /* justify-content: space-around;
-    justify-content: space-between;*/
-    align-items: center;
-    width: 80%;
+  align-items: center;
+  width: 80%;
 }
-
 .item-list-container > .product-item > .product-item-panaderia-textos > .product-item-panaderia-texto-principal{
-  /*display: contents;
-  display: flex;
-    justify-content: space-around;
-    align-items: center;*/
-    /*justify-content: space-between;*/
-    width: 100%;
-            display: contents;
+  width: 100%;
+  display: contents;
                                                    
 }
 
@@ -97,7 +76,7 @@
     flex-direction: row; 
     max-width: 100%;
     justify-content: space-around;
-}
+  }
   .item-list-container >.product-item-panaderia-textos{
     display: flex;
     align-items: center;    
@@ -121,14 +100,13 @@
     display: flex;
     justify-content: space-around;
   }
-
   .item-list-container .product-title {
     display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .item-list-container{
     padding: 0 2rem;

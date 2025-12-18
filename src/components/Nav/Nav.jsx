@@ -27,23 +27,23 @@ export const Nav = () => {
         </ul>
 
 
-        <div className="burger-menu" >
+        <div className="nav-bar-con-burger-menu" >
             <input type="checkbox" id="menu"/>
             <label htmlFor="menu"> <i className="fa fa-bars burger"></i> </label>
 
 
-            <ul className="burger-menu2">
-                <li className="desplegableM">
+            <ul className="nav-bar-con-burger-menu2">
+                <li className="nav-bar-con-burger-menu-desplegable">
                     <Link to={"/"}>Home</Link>
                 </li>
-                <li className="desplegableM">
+                <li className="nav-bar-con-burger-menu-desplegable">
                     <Link to={"./category/dulce"}>Dulce</Link>
                 </li>
                     
-                <li className="desplegableM">
+                <li className="nav-bar-con-burger-menu-desplegable">
                     <Link to={"./category/salado"}>Salado</Link>
                 </li>
-                <li className="desplegableM cart-container">
+                <li className="nav-bar-con-burger-menu-desplegable cart-container">
                     <Link to={"/carrito"}>Carrito
                     {getTotalItems() > 0 && (
                         <span className="in-cart">{getTotalItems()}</span>

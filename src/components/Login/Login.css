@@ -4,18 +4,19 @@
   margin: 4rem auto;
   padding: 1.25rem 1.5rem;
   background: #2c2c2c; /* gris oscuro */
-  /* color: #f0f0f0; texto claro */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 /* Título */
 .session-form h2 {
   margin: 0 0 1rem 0;
   font-size: 1.6rem;
-  color: #fff;
+  color: #ffffff;
 }
+
 /* Filas del formulario (tus <div>) */
 .session-form > div {
   display: grid;
@@ -28,6 +29,7 @@
   font-size: 0.95rem;
   color: #ddd;
 }
+
 /* Inputs / textarea */
 .session-form input[type="text"],
 .session-form input[type="password"]{
@@ -58,12 +60,3 @@
 
   color: #ffcc66;
 }
-/* Nota pequeña (tu <small>)
-.session-form small {
-  color: #bdbdbd;
-} 
- .session-form:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
-}
-*/

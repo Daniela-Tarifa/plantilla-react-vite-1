@@ -18,26 +18,21 @@
         background: black;
     }
     .detail-container > .product-item img {
-        /*width: 30%;*/
         width: 100%;
     }
     .detail-container > .product-item > .product-item-panaderia-textos {
         display: flex;
         flex-direction: column;
-        /*justify-content: space-around;
-        align-items: center;*/
         padding: 20px 0px 20px 20px;
         justify-content: space-between;
-
         width: 70%;
     }
     .detail-container .item-panaderia-descripcion{
-        margin: 20px 0px;}
-
+        margin: 20px 0px;
+    }
     .detail-container  .product-item-panaderia-texto-principal{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
 }
