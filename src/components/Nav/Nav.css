@@ -59,3 +59,102 @@ nav ul .opcion-carrito:hover{
 .cart-container:hover{
  background-color: #111111;
 }
+div .burger-menu{
+  display: none;
+}
+
+/*para celu*/
+@media(max-width: 720px){
+.nav-bar-sin-burger-menu{
+  display: none;
+}
+/**menu hamburgesa**/
+div .burger-menu{
+    text-align: center;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+}
+
+.burger-menu2{
+    display: none;
+    margin-top:0;
+    padding: 0;
+}
+
+#menu:checked  ~ .burger-menu2 {
+    display: flex;
+    flex-direction: column;
+}
+#menu {
+display: none;
+}
+
+.menu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.desplegableM a{
+    text-decoration: none;
+    color: #333333;
+    display: block;/*este y el padding de abajo lo arreglo al botoon*/
+    padding: 10px 20px;
+    
+} 
+.desplegableM a:hover{
+background: #1e1e1e;
+}
+/* Estilo del boton cuando se pasa el mouse por encima*/
+.menu:hover{
+    background: #0022AA;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+#menu:checked ~ .menu {
+    background: #0022AA; 
+}
+
+.desplegableM{
+    display: block;
+    background:#fac65e ;
+    margin: 0;
+    list-style: none;
+    border-bottom: 0.2px solid #333333;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+.desplegableM:hover {
+    filter: brightness(110%);
+}
+
+div.burger-menu i {
+    background-color: #fac65e;
+    border-radius: 5px;
+    color: #333333;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+.burger-menu label {
+      cursor: pointer;
+      display: inline-block;
+      outline: none; /* Esto quita el borde punteado */
+  }
+/*hamburgesa menu*/
+/****/
+}

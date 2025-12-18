@@ -2,7 +2,7 @@
 .product-form {
   max-width: 720px;
   margin: 2rem auto;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem;
   background: #2c2c2c; /* gris oscuro */
   /*color: #f0f0f0;  texto claro */
   border-radius: 12px;
@@ -46,10 +46,10 @@
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
-/* Placeholder más tenue */
+/* Placeholder en caso de querer usarlo
 .product-form ::placeholder {
   color: #aaa;
-}
+}*/
 
 /* Hover/focus */
 .product-form input[type="text"]:focus,
@@ -88,7 +88,13 @@
 }
 
 
-/* Layout responsive (opcional, si más adelante querés dos columnas) */
+.error {
+  color: red;
+  margin-bottom: 3px;
+}
+
+
+/* Layout responsive (opcional, si más adelante querés dos columnas) 
 @media (min-width: 640px) {
   .product-form .row-2 {
     display: grid;
@@ -98,5 +104,10 @@
 }
 .error {
   color: red;
-  margin-top: 3px;
+  margin-bottom: 3px;
+}*/
+@media(min-width: 720px){
+  .product-form {
+  margin: 4rem auto;
+  padding: 1.25rem 1.5rem;}
 }

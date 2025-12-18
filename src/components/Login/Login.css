@@ -1,7 +1,7 @@
 /* Contenedor del formulario de inicio de sesion*/
 .session-form {
   max-width: 720px;
-  margin: 2rem auto;
+  margin: 4rem auto;
   padding: 1.25rem 1.5rem;
   background: #2c2c2c; /* gris oscuro */
   /* color: #f0f0f0; texto claro */
@@ -41,7 +41,7 @@
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
-/* Placeholder más tenue */
+/* Placeholder en caso de quererlo */
 .session-form ::placeholder {
   color: #aaa;
 }

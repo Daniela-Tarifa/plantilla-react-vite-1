@@ -5,10 +5,17 @@
   color: #ffcc66; /**aqua**/
   margin-top: 0px;
 }
+header{
+  padding: 2rem 0;
+}
+
+/**para pc**/
 @media(min-width: 1140px){
   header{
   display: flex;
   justify-content: space-between;
+
+  padding: 2rem;
 }
 .header-logo{
   display: flex;
