@@ -61,9 +61,10 @@ div .nav-bar-con-burger-menu{
   div .nav-bar-con-burger-menu{
     text-align: center;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     padding: 0rem 0.5rem;
+    outline: none;
+    width: 100%;
   }
   .nav-bar-con-burger-menu2{
     display: none;
