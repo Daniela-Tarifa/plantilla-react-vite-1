@@ -1,4 +1,4 @@
-const BASE_URL = "https://6917d26821a96359486dfb22.mockapi.io/products";
+const BASE_URL = import.meta.env.VITE_MOCKAPI_URL;
 
 export const createProduct = async (product) => {
   const res = await fetch(BASE_URL, {

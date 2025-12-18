@@ -11,3 +11,8 @@ git push -u origin main
 npm i react-router-dom
 npm i
 npm run dev
+
+PRODUCTO PARA VENDER CON MOCKAPI + IMGBB
+
+-recomendación de tamaño de imagen: 
+640x640 782KB 72ppp 24bits
