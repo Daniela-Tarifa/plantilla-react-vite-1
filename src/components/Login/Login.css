@@ -41,7 +41,7 @@
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
-/* Placeholder en caso de quererlo */
+/* Placeholder en caso de querer usarlo */
 .session-form ::placeholder {
   color: #aaa;
 }

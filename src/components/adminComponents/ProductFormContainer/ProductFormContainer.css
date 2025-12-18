@@ -46,10 +46,10 @@
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
-/* Placeholder en caso de querer usarlo
+/* Placeholder en caso de querer usarlo */
 .product-form ::placeholder {
   color: #aaa;
-}*/
+}
 
 /* Hover/focus */
 .product-form input[type="text"]:focus,
