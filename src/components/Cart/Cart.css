@@ -26,6 +26,7 @@
 .total-pagar {
   width: 100%;
   text-align: center;
+  color: #ffffff;
 }
 .item-list-container > .product-item{
   display: flex;

@@ -11,7 +11,7 @@ export const ItemList =({list}) => {
             <Item {...prod}/>
         </Link>))
      ): ( 
-        <p>No hay productos</p> 
+        <p className="item-panaderia-container-cargando">No hay productos</p> 
      )}
     </>
     );

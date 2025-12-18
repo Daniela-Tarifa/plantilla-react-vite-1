@@ -28,7 +28,7 @@ export const ItemDetailContainer = () => {
       {Object.keys(detail).length ? (
         <ItemDetail detail={detail} />
       ) : (
-        <p>Cargando...</p>
+        <p className="item-panaderia-container-cargando" >Cargando...</p>
       )}
     </main>
  );
