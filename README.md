@@ -1,11 +1,11 @@
 # 🍞 React + Vite E-commerce Starter Kit - Bakery Template
 
-¡Bienvenido! Este es un Boilerplate/Starter Kit profesional para un E-commerce básico desarrollado con React y Vite. Está diseñado como ejemplo para negocios de panaderías, pero basta con cambiar el logo, las categorías y los datos del JSON de tus productos para que se adapte a cualquier otro tipo de negocio. Cuenta con una arquitectura limpia, escalable y lista para ser personalizada por desarrolladores.
+¡Bienvenido! Este es un Boilerplate/Starter Kit para un E-commerce básico desarrollado con React y Vite. Está diseñado como ejemplo para negocios de panaderías, pero basta con cambiar el logo, las categorías y los datos del JSON de tus productos para que se adapte a cualquier otro tipo de negocio. Cuenta con una arquitectura limpia, escalable y lista para ser personalizada por desarrolladores.
 ---
 
 ## 🚀 Características Técnicas
 
-- **Bundler:** Vite (Velocidad de carga ultra rápida).
+- **Herramienta de Construcci��n:** Vite (Velocidad de carga ultra rápida).
 - **Estado Global:** Context API para la gestión del carrito de compras.
 - **Rutas:** React Router DOM para navegación SPA.
 - **Persistencia de Datos:** Integración lista con **MockAPI**.
@@ -24,7 +24,7 @@
 
 ---
 
-## 🛠️ Requisitos Previos
+## 🛠�?Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado:
 - [Node.js](https://nodejs.org/) (Versión 16 o superior recomendada)
@@ -38,6 +38,9 @@ Sigue estos pasos para poner en marcha el proyecto:
 -Instalar dependencias:
 npm install
 npm i react-router-dom
+
+ATENCI��N: Si al ejecutar npm install recibes un error de "SecurityError" o "scripts deshabilitados", intenta lo siguiente:
+Usa la terminal Command Prompt o Git Bash en lugar de PowerShell.
 
 -Configurar Variables de Entorno: Crea un archivo llamado .env en la raíz del proyecto (puedes guiarte del archivo .env.example) y completa con tus credenciales de Mockapi y Imgbb:
 VITE_MOCKAPI_URL=https://tu-endpoint-de-mockapi.com/products
@@ -55,7 +58,7 @@ src/
 └── App.jsx         # Configuración de rutas
 
 -📝 Notas para el Desarrollador
-**Estructura de Datos: El frontend espera objetos JSON con la siguiente estructura: { id, name, price, category, description, imageUrl }.
+**Estructura de Datos: El frontend espera objetos JSON con la siguiente estructura (del Mockapi): { id: objectID , name: string, price: number, category: string, description: string, imageUrl: string }.
 Ejemplo de un producto cargado en el mockapi:
 [
   {
