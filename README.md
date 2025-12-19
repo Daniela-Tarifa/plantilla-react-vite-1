@@ -5,7 +5,7 @@
 
 ## 🚀 Características Técnicas
 
-- **Herramienta de Construcci��n:** Vite (Velocidad de carga ultra rápida).
+- **Herramienta de Construcción:** Vite (Velocidad de carga ultra rápida).
 - **Estado Global:** Context API para la gestión del carrito de compras.
 - **Rutas:** React Router DOM para navegación SPA.
 - **Persistencia de Datos:** Integración lista con **MockAPI**.
@@ -24,7 +24,7 @@
 
 ---
 
-## 🛠�?Requisitos Previos
+## 🛠 Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado:
 - [Node.js](https://nodejs.org/) (Versión 16 o superior recomendada)
@@ -39,7 +39,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 npm install
 npm i react-router-dom
 
-ATENCI��N: Si al ejecutar npm install recibes un error de "SecurityError" o "scripts deshabilitados", intenta lo siguiente:
+ATENCIÓN: Si al ejecutar npm install recibes un error de "SecurityError" o "scripts deshabilitados", intenta lo siguiente:
 Usa la terminal Command Prompt o Git Bash en lugar de PowerShell.
 
 -Configurar Variables de Entorno: Crea un archivo llamado .env en la raíz del proyecto (puedes guiarte del archivo .env.example) y completa con tus credenciales de Mockapi y Imgbb:
