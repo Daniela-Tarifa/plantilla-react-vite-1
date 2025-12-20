@@ -67,7 +67,7 @@ Ejemplo de un producto cargado en el mockapi:
     "price": 5000,
     "category": "salado",
     "description": "Elaborado con varios tipos de granos (no solo trigo), lo que le da un sabor y textura característicos",
-    "imageUrl": "https://IMAGEN-IMGBB.png",
+    "imageUrl": "https://IMAGEN-IMGBB.png", //recomendación de tamaño de imagen: 640x640 782KB 72ppp 24bits 
   }
 ]
 ACLARACIÓN: la subida de la imagen del producto no se hace desde la pagina del Imgbb sino desde el formulario del alta del producto, de Imgbb solo debe obetener su credencial y colocarla en el archivo .env
