@@ -15,7 +15,10 @@
   font-size: 1.6rem;
   color: #fff;
 }
-
+.product-form h5 a{
+  color: #fff;
+  text-decoration: underline;
+}
 /* Filas del formulario (tus <div>) */
 .product-form > div {
   display: grid;

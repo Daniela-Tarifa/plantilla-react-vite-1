@@ -1,0 +1,66 @@
+[
+  {
+    "name": "pan multigrano redondo",
+    "price": 5000,
+    "category": "salado",
+    "description": "Elaborado con varios tipos de granos (no solo trigo), lo que le da un sabor y textura característicos",
+    "imageUrl": "/images/pan-multigrano-redondo.png",
+    "id": "1"
+  },
+  {
+    "name": "Baguette",
+    "price": 1500,
+    "category": "salado",
+    "description": "barra de pan francés alargada y estrecha, caracterizada por su corteza crujiente y su miga suave y esponjosa",
+    "imageUrl": "/images/baguette.png",
+    "id": "2"
+  },
+  {
+    "name": "Focaccia",
+    "price": 2800,
+    "category": "salado",
+    "description": "Es una deliciosa alternativa al pan y se puede comer a cualquier hora del día o de la noche, con las combinaciones más extravagantes.",
+    "imageUrl": "/images/focaccia.png",
+    "id": "3"
+  },
+  {
+    "name": "Pan de campo",
+    "price": 1800,
+    "category": "salado",
+    "description": "Pan artesanal rústico elaborado con una mezcla de harinas (integral, blanca y también incluye centeno)",
+    "imageUrl": "/images/pan-de-campo.png",
+    "id": "4"
+  },
+  {
+    "name": "Pan de muerto",
+    "price": 6000,
+    "category": "dulce",
+    "description": "Pan tradicional mexicano, es redondo con un cráneo en el centro y cuatro \"huesos\" (tiras de masa) cruzados que representan el esqueleto, todo espolvoreado con azúcar.",
+    "imageUrl": "/images/pan-de-muerto.png",
+    "id": "5"
+  },
+  {
+    "name": "Pan concha",
+    "price": 3700,
+    "category": "dulce",
+    "description": "Es un pan mexicano tradicional, de forma redonda y suave, que se caracteriza por tener una cubierta azucarada y crujiente que imita la concha de un caracol",
+    "imageUrl": "/images/pan-concha.png",
+    "id": "6"
+  },
+  {
+    "name": "Pan de corbata danés",
+    "price": 1500,
+    "category": "dulce",
+    "description": "Este pan tiene forma alargada y retorcida en el centro, simulando una corbata o moño. Su textura es; hojaldrada y crujiente por fuera, suave por dentro.",
+    "imageUrl": "/images/pan-de-corbata-danes.png",
+    "id": "7"
+  },
+  {
+    "name": "Rosca de Reyes",
+    "price": 12000,
+    "category": "dulce",
+    "description": "Pan dulce tradicional, los ingredientes son: harina de trigo, huevo, azúcar, mantequilla, sal, ralladura de naranja y fruta cristalizada.",
+    "imageUrl": "/images/rosca-de-reyes.png",
+    "id": "8"
+  }
+]

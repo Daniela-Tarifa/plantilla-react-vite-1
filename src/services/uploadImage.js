@@ -38,6 +38,17 @@ export const fileToBase64 = (file) => {
 };
 
 export const uploadToImgbb = async (file) => {
+/* -------------------------------------------------------------------------- */
+/*    Cuando hayas colocado tu credencial del imgbb puedes borrar/comentar    */
+/* el primer if que funciona si no api key osea si no hay credencial de imgbb */
+/* -------------------------------------------------------------------------- */
+  // Si no hay API KEY, devolvemos la imagen de repuesto en lugar de fallar
+  if (!IMGBB_API_KEY) {
+    console.warn("ImgBB Key no configurada. Usando imagen de respaldo.");
+    // Aquí pones la ruta a la imagen que creaste
+    return "../public/images/prueba-con-tus-credenciales-de-imgbb.png"; 
+  }
+
   // Validaciones mínimas
   if (!file) {
     throw new Error("No se recibió ningún archivo de imagen");

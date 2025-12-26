@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const ProductFormUI = ({
   product,
   errors, // trae los errores q pusimos en la carpeta utils> validateProducts.js
@@ -65,6 +66,12 @@ export const ProductFormUI = ({
         <button className="btn-panaderia" type="submit" disabled={loading}>
           {loading ? "Guardando..." : "Guardar"}
         </button>
+        <div>
+          <h5>
+            <Link to={"/"}>Volver al Home</Link>
+          </h5>
+        </div>
+        
       </form>
     </section>
   );

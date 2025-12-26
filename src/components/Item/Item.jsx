@@ -12,7 +12,7 @@ export const Item = ({name, price, description, imageUrl, children,  isDetail}) 
                 <h2 className="product-title">{name}</h2>
                 <p>Precio: ${price}</p>
             </div> 
-        <p className="item-panaderia-descripcion">Descripcion {description}</p>
+        <p className="item-panaderia-descripcion">Descripcion: {description}</p>
         {children}
         </div>
         
