@@ -6,20 +6,35 @@ Welcome! This is a Boilerplate/Starter Kit for a basic E-commerce application de
 
 ## 🛠 Prerequisites
 Before starting, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
+- Node.js (Version 18 or higher recommended)
 - npm
 - Recommended Terminal: Git Bash
 
-## 📦 Configuration (IMPORTANT!!!)
+## 📦 Configuration 1/2 (IMPORTANT!!!)
 Configure Environment Variables:
-**Step 1** - Create a file named .env in the project root (you can use .env.example as a guide). 
+**Step 1** - Create a file named ".env" in the project root (you can use ".env.example" as a guide). 
 **Step 2** - To test the application, fill in your MockAPI and ImgBB credentials (free tiers are sufficient). Example:
 
 VITE_MOCKAPI_URL=https://__your-mockapi-endpoint-usually-letters-and-numbers__.com/products
 VITE_IMGBB_KEY=__your_imgbb_api_key-usually-just-letters-and-numbers__
 
 
-**Step 3** - Fallback Code: A local products.json file is included as a backup in case you forget to test with your MockAPI and ImgBB credentials. (Details regarding the MockAPI data fields can be found in the "-📝 Developer Notes" section of this README).
+## 📦 Installation (IMPORTANT!!!)
+Follow these steps to get the project running:
+
+- **Install dependencies:**
+npm install
+npm i react-router-dom
+
+- **Start the development server:**
+npm run dev
+
+
+Note: If you receive a "SecurityError" or "disabled scripts" error when running npm install, try using Command Prompt or Git Bash instead of PowerShell.
+
+
+## 📦 Configuration 2/2 (OPTIONAL: CODE CLEANUP)
+**Last Step** - Fallback Code: A local products.json file is included as a backup in case you forget to test with your MockAPI and ImgBB credentials. (Details regarding the MockAPI data fields can be found in the "-📝 Developer Notes" section of this README).
 
 __Note on Cleaning the Code:__
 If you prefer not to use the local JSON fallback and only want to test via MockAPI and ImgBB, follow these steps to keep the code clean (although the code works perfectly even if you do not delete/comment these parts, as it includes a built-in fallback system; however, if API keys are provided, the application will automatically prioritize and use the MockAPI and ImgBB services):
@@ -41,17 +56,6 @@ These files are: baguette.png, focaccia.png, pan-concha.png, pan-de-campo.png, p
 
 -Delete/comment out the code at the beginning, and uncomment the code that appears commented out at the bottom of the products.js file in the folder (src/service/products.js).
 
-## 📦 Installation
-Follow these steps to get the project running:
-
-- **Install dependencies:**
-npm install
-npm i react-router-dom
-
-- **Start the development server:**
-npm run dev
-
-ATTENTION: If you receive a "SecurityError" or "disabled scripts" error when running npm install, try using Command Prompt or Git Bash instead of PowerShell.
 
 ---
 
@@ -63,6 +67,7 @@ ATTENTION: If you receive a "SecurityError" or "disabled scripts" error when run
 - **Image Management:** Image upload system integrated with the **ImgBB API**.
 - **Design:** Pure CSS (Responsive Design) without heavy external dependencies.
 - **Admin Panel:** Functional `/admin` route for inventory management.
+- **EXTRA** Recommended image size: 640x640 782KB 72dpi 24bits.
 
 
 ## 🔐 Authentication & Admin Panel
@@ -95,15 +100,14 @@ MockAPI Product Example:
     "price": 5000,
     "category": "savory",
     "description": "Made with various grains for a unique flavor and texture",
-    "imageUrl": "https://IMAGEN-IMGBB.png"
+    "imageUrl": "https://IMAGEN-IMGBB.png" ////In MockApi, leave it as a string. When you upload the product from the product creation screen, the image URL will be loaded automatically.
   }
 ]
 ATTENTION: Product images are uploaded directly via the product form in the application, not through the ImgBB website. You only need to obtain your API key from ImgBB and add it to your .env file.
 
 
 **Admin Route:** Access the management panel at http://localhost:5173/admin after logging in.
-
-As this is a starter kit, there is no explicit logout button; close the tab to reset the admin session.
+-As this is a starter kit, there is no explicit logout button; close the tab to reset the admin session.
 
 **Responsive Design:** The hamburger menu and product grid are optimized for both mobile and desktop devices.
 
@@ -117,26 +121,43 @@ This code is distributed as a quick-start template. You are free to use it for p
 
 ##---------------------------------------------en Español-------------------------------------------------------------##
 
-# 🍞 React + Vite E-commerce Starter Kit - Bakery Template
-¡Bienvenido! Este es un Boilerplate/Starter Kit para un E-commerce básico desarrollado con React(versión que usé: 19.2.0) y Vite. Está diseñado como ejemplo para negocios de panaderías, pero basta con cambiar el logo, las categorías y los datos del JSON de tus productos para que se adapte a cualquier otro tipo de negocio. Cuenta con una arquitectura limpia, escalable y lista para ser personalizada por desarrolladores.
+# 🍞 Kit de inicio para E-commerce desarrollado con React y Vite – Plantilla de panadería
+¡Bienvenido! Este es un Boilerplate/ Kit de inicio para un E-commerce básico desarrollado con React(versión que usé: 19.2.0) y Vite. Está diseñado como ejemplo para negocios de panaderías, pero basta con cambiar el logo, las categorías y los datos del JSON de tus productos para que se adapte a cualquier otro tipo de negocio. Cuenta con una arquitectura limpia, escalable y lista para ser personalizada por desarrolladores.
 ---
 
 ## 🛠 Requisitos Previos
 Antes de comenzar, asegúrate de tener instalado:
-- [Node.js](https://nodejs.org/) (Versión 18 o superior recomendada)
+- Node.js (Versión 18 o superior recomendada)
 - npm
 - Recomendación de terminal: Git Bash
 
-## 📦 Configuración (IMPORTANTE!!!)
+## 📦 Configuración 1/2 (IMPORTANTE!!!)
 -Configurar Variables de Entorno: 
-**Paso 1** - Crear un archivo llamado .env en la raíz del proyecto (puedes guiarte del archivo .env.example). 
+**Paso 1** - Crear un archivo llamado ".env" en la raíz del proyecto (puedes guiarte del archivo ".env.example"). 
 **Paso 2** - Para realizar la prueba, completa con tus credenciales de Mockapi y Imgbb (basta con las gratuitas), 
 Ejemplo:
 
 VITE_MOCKAPI_URL=https://__tu-endpoint-de-mockapi-suelen-ser-numeros-y-letras__.com/products
 VITE_IMGBB_KEY=__tu_api_key_de_imgbb-suelen-ser-solo-numeros-y-letras__
 
-**Paso 3** - Codigo de repuesto: tienes un products.json local como repuesto en caso de que se te olvide probar con tus credenciales de MockAPI e ImgBB (son credenciales gratuitas que te permiten crear una API, la aclaración de los campos del api del mockapi estan en este README.md en el apartado de "-📝 Notas para el Desarrollador"), 
+
+## 📦 Instalación (IMPORTANTE!!!)
+Sigue estos pasos para poner en marcha el proyecto:
+
+-Instalar dependencias:
+npm install
+npm i react-router-dom
+
+-Iniciar el servidor de desarrollo:
+npm run dev
+
+
+Nota: Si al ejecutar npm install recibes un error de "SecurityError" o "scripts deshabilitados", intenta lo siguiente:
+Usa la terminal Command Prompt o Git Bash en lugar de PowerShell.
+
+
+## 📦 Configuración 2/2 (OPCIONAL: LIMPIEZA DE CÓDIGO)
+**Ultimo Paso** - Codigo de repuesto: tienes un products.json local como repuesto en caso de que se te olvide probar con tus credenciales de MockAPI e ImgBB (son credenciales gratuitas que te permiten crear una API, la aclaración de los campos del api del mockapi estan en este README.md en el apartado de "-📝 Notas para el Desarrollador"), 
 
 
 __Nota__: si no quieres probar por json local, es decir solo quieres probar con mockapi y imgbb, para dejar el código limpio (aunque el código funciona incluso si no borras/comentas estas partes, ya que funciona cuando no hay api key pero si hay entonces toma las api key de MockAPI e ImgBB), entonces borra/comenta:
@@ -159,20 +180,6 @@ Los archivos son: baguette.png, focaccia.png, pan-concha.png, pan-de-campo.png, 
 -borra/comenta el codigo que esta al principio, y des-comenta el codigo que aparece comentado al fondo del archivo products.js que esta en la carpeta (src/service/products.js).
 
 
-## 📦 Instalación
-Sigue estos pasos para poner en marcha el proyecto:
-
--Instalar dependencias:
-npm install
-npm i react-router-dom
-
--Iniciar el servidor de desarrollo:
-npm run dev
-
-
-ATENCIÓN: Si al ejecutar npm install recibes un error de "SecurityError" o "scripts deshabilitados", intenta lo siguiente:
-Usa la terminal Command Prompt o Git Bash en lugar de PowerShell.
-
 ---
 
 ## 🚀 Características Técnicas
@@ -183,6 +190,7 @@ Usa la terminal Command Prompt o Git Bash en lugar de PowerShell.
 - **Gestión de Imágenes:** Sistema de subida de imágenes integrado con la API de **ImgBB**.
 - **Diseño:** CSS Puro (Responsive Design) sin dependencias externas pesadas. 
 - **Panel Administrador:** Ruta `/admin` funcional para carga de inventario.
+- **EXTRA** recomendación de tamaño de imagen: 640x640 782KB 72ppp 24bits.
 
 ### 🔐 Autenticación y Panel de Administración
 - **Acceso Protegido:** La ruta `/admin` utiliza un componente de envoltura (`RutaProtegida.jsx`) que verifica la sesión antes de permitir el acceso al formulario de gestión de productos.
@@ -214,7 +222,7 @@ Ejemplo de un producto cargado en el mockapi:
     "price": 5000,
     "category": "salado",
     "description": "Elaborado con varios tipos de granos (no solo trigo), lo que le da un sabor y textura característicos",
-    "imageUrl": "https://IMAGEN-IMGBB.png", //recomendación de tamaño de imagen: 640x640 782KB 72ppp 24bits 
+    "imageUrl": "https://IMAGEN-IMGBB.png", //en mockapi dejalo en string, cuando cargues el producto desde el alta del producto se va a cargar el url de la imagen de forma automatica.
   }
 ]
 
